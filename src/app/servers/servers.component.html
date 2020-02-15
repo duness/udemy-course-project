@@ -1,0 +1,8 @@
+<button class="btn btn-primary"
+    (click)="onDisplayButtonClick()">Display Details</button>
+<p *ngIf="btnClicked">SecretPassword = tuna</p>
+<div
+    *ngFor="let elem of clickContainer"
+    [ngStyle]="{backgroundColor: elem >= 5 ? 'blue' : 'transparent'}"
+    [ngClass]="{'text-w' : elem >= 5}">{{ elem }}</div>
+
